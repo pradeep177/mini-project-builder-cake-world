@@ -5,9 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <script src="./script.js"></script>
 </head>
 <body>
-    
+    <div class="header">
+        <img src="./assets/cake.png" alt="cake" width="100px" height="100px">
+        <h2>CAKE WORLD</h2>
+    </div>
+    <div class="middle">
+        <div class="menu">
+            <img src="./assets/list_template.png" alt="template1" width="220px" height="210px">
+           <div class="menu-container">
+               <h3>PRICES</h3>
+               <p>chocolate----300</p>
+               <p>strawberry---100</p>
+               <p>Butterscotch--200</p>
+               <p>vannila------250</p>
+               <p>Redvelvet----350</p>
+           </div>
+        </div>
+        <div id="cakes">
+            <div id="chocolate-1"></div>
+            <div id="strawberry-1"></div>
+            <div id="butterscotch-1"></div>
+            <div id="vanilla-1"></div>
+            <div id="redvelvet-1"></div>
+        </div>
+        <div>
+            <img src="./assets/list_template.png" alt="template2" width="240px" height="210px">
+            <h3 class="bill">BILL</h3>
+            <div class="menu-container2">
+                <div id="chocolate"></div>
+                <div id="strawberry"></div>
+                <div id="butterscotch"></div>
+                <div id="vanilla"></div>
+                <div id="redvelvet"></div>
+                <div id="total"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <button onclick="displayItem1('chocolate','chocolate')" class="btn" id="btn-chocolate">chocolate</button>
+        <button  onclick="displayItem2('strawberry','strawberry--100')" class="btn" id="btn-strawberry">strawberry</button>
+        <button  onclick="displayItem3('butterscotch','butterScotch-200')" class="btn" id="btn-Butterscotch">Butterscotch</button>
+        <button  onclick="displayItem4('vanilla','vanilla--250')" class="btn" id="btn-vannila">vannila</button>
+        <button  onclick="displayItem5('redvelvet','redvelvet--350')" class="btn" id="btn-Redvelvet">Redvelvet</button>
+        <button  onclick="displayItem6('total')" class="btn-buy" id="btn-Buy">BUY</button>
+    </div>
 </body>
 <script src="/script.js"></script>
 </html>
